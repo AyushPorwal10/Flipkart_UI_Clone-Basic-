@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(238, 238, 250);
+}
+.navbar
+{
+    height: 40px;
+    width: 905px;
+    background-color: #FFFFFF;
+    padding:8px;
+    display: flex;
+    align-items: centerr;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.flipkart-logo
+{
+    height: 30px;
+    width: 140px;
+   padding-left:40px ;
+   
+}
+.logo{
+    height: 100%;
+    width: 90%;
+    background-image: url(Flipkart_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.search-bar
+{
+    height: 25px;
+    width: 394.28px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(238, 238, 250);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.search-logo
+{
+    height: 30px;
+    width: 38px;
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo-icon{
+    height: 20px;
+    width: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-area input
+{
+    height: 25px;
+    width: 355.28px;
+    background-color:rgb(238, 238, 250);
+    border: none;
+    font-size: 0.8rem;
+}
+/* .account-bar{
+    height: 75%;
+    width: 14.5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.account-icon
+{
+    margin-right: 5px;
+} */
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+    text-align: center;
+    height: 20px;
+    width:75px;
+    padding-top: 4px;
+}
+.dropdown-content i{
+    margin-right: 5px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.5);
+    min-width: 120px;
+    min-height: 200px;
+    font-size: 10px;
+    color: #000;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    left: 0;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000;
+    
+}
+.dropdown:hover #good{
+ rotate: 180deg;
+}
+.kart-shop-dot
+{
+    height: 30px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kart-shop-dot span{
+    color: #0b0b0b;
+    font-size: 10px;
+text-align: center;
+}
+
+/* Panel-1 */
+.panel-1
+{
+    background-color:white;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 8px;
+    height: 90px;
+    width: 885px;
+    display: flex;
+}
+.box
+{
+    height:90px ;
+    width: 98px;
+   
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width:500px)
+{
+          .panel-1{
+            background-color:white;
+            margin-top: 50px;
+            margin-right: 10px;
+            margin-left: 8px;
+            height: 180px;
+            width: 470px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+          .box{
+            height:45% ;
+            width: 20%;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .image{
+            height: 30%;
+            width: 30%;
+          }
+}
+.image
+{
+    height: 40px;
+    width: 40px; 
+}
+.image:hover{
+    transform: scale(1.1);
+}
+.image span{
+    position: relative;
+    top: 46px;
+}
+.item1
+    {
+        background-image: url(panel-1-grocery.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item2
+    {
+        background-image: url(panel-1-mobile.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item3
+    {
+        background-image: url(panel-1-fashion.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item4
+    {
+        background-image: url(panel-1-electronics.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item5
+    {
+        background-image: url(panel-1-home.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item6
+    {
+        background-image: url(pnel-1-appliances.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item7
+    {
+        background-image: url(panel-1-travel.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item8
+    {
+        background-image: url(panel-1-toys.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+.item9
+    {
+        background-image: url(panel-1-vehicles.webp);
+        background-size: contain;
+        font-size: 0.8rem;
+        text-align: center;
+}
+/* This is for panel 2 */
+.panel-2{
+    height: 145px;
+    width: 885px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 8px;
+    background-color: white;
+    background-image: url(Panel-2-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:500px){
+    .panel-2{
+         height: 75px;
+         width: 470px;
+         margin-top: 10px;
+         margin-right: 10px;
+         margin-left: 8px;
+         background-color: white;
+         background-image: url(Panel-2-image.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+}
+.panel-2:hover{
+    transform: scale(1.02);
+}
+.panel-3
+{
+    background-color: white;
+    height: 230px;
+    width: 730px;
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly; 
+}
+.panel-3-heading
+{
+    height: 28px;
+    width: 730px;
+}
+.p3-boxi
+{
+    height: 82%;
+    width: 128px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+.p3-boxi-images
+{
+    height: 80%;
+    width: 100%; 
+}
+.p3-boxi-images:hover{
+    transform: scale(1.02);
+}
+.p3image1{
+    background-image:url(p3-box1.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.p3image2
+{
+    background-image:url(p3-box2.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.p3image3
+{
+    background-image:url(p3-box3.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.p3image4
+{
+    background-image:url(p3-box4.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.p3image5
+{
+    background-image:url(p3-box5.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box-text
+{
+    height: 20%;
+    width: 100%;
+}
+.panel-3-extra
+{
+    height: 230px;
+    width: 140px;
+    background-color: white;
+    position: absolute;
+   left: 750px;
+    top: 305px;
+    padding: 10px 0px 10px 0px;
+}
+.panel-3-extra-img
+{
+    height: 100%;
+    width: 100%;
+    background-image: url(p3-extra.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.panel-3-extra:hover{
+    transform: scale(1.02);
+}
+/* This is Panel-4 */
+
+.panel-4
+{
+    background-color: white;
+    height: 230px;
+    width: 880px;
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+    
+}
+.panel-4-heading
+{
+    height: 28px;
+    width: 880px;
+}
+
+.p4-boxi
+{
+    height: 82%;
+    width: 128px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: felx;
+    flex-wrap: wrap; 
+}
+
+.p4-boxi-images
+{
+    height: 80%;
+    width: 100%; 
+}
+.p4-boxi-images:hover{
+    transform: scale(1.02);
+}
+.p4image1{
+    background-image:url(p4-image1.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+}
+.p4image2
+{
+    background-image:url(p4-image2.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p4image3
+{
+    background-image:url(p4-image3.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p4image4
+{
+    background-image:url(p4-image4.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p4image5
+{
+    background-image:url(p4-image5.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p4image6
+{
+    background-image:url(p4-image6.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.box-text
+{
+    height: 20%;
+    width: 100%;
+}
+/* This is Panel 5 */
+.panel-5
+{
+    background-color: white;
+    height: 230px;
+    width: 880px;
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;   
+}
+.panel-5-heading
+{
+    height: 28px;
+    width: 885px;
+}
+
+.p5-boxi
+{
+    height: 82%;
+    width: 128px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p5-boxi-images
+{
+    height: 90%;
+    width: 90%; 
+}
+.p5image1{
+    background-image:url(p5-image1.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+}
+.p5-boxi-images:hover{
+    transform: scale(1.1);
+}
+.p5image2
+{
+    background-image:url(p5-image2.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p5image3
+{
+    background-image:url(p5-image3.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p5image4
+{
+    background-image:url(p5-image4.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p5image5
+{
+    background-image:url(p5-image5.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+
+}
+.p5image6
+{
+    background-image:url(p5-image6.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;  
+}
+.box-text
+{
+    height: 20%;
+    width: 100%;
+}
+.Footer
+{
+    height: 180px;
+    width: 880px;
+    padding: 20px 5px 0px 15px;
+    background-color: rgb(28, 26, 26);
+    margin-left: 10px;
+    column-gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(6,1fr);
+}
+.foot{
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns:repeat(1,1fr) ;
+}
+.Footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 8.5px;
+    font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
+}
+.Footer a:hover{
+    text-decoration: underline;
+}
+.Footer span{
+    font-size: 8.5px;
+    font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
+    color: #FFFFFF;
+}
+hr{
+    color: red;
+}
+.Footer-Last{
+    height: 50px;
+    width: 880px;
+    margin-left: 10px;
+    padding: 5px 5px 5px 5px;
+    background-color:rgb(28, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.first
+{
+    height: 90%;
+    width: 48%; 
+    padding: 0px 4px 0px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.first a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 7.8px;
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif; 
+}
+.first i{
+    color:gold;
+    margin-right: 2px;
+}
+.second{
+    height: 90%;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second span{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 7.8px;
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+}
+.third{
+    width: 32%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.third span{
+    background-color: white;
+    line-height: 10px;
+}
+.sprite{
+    height: 250px;
+    width: 250px;
+    background-image: url(boy.jpg);
+    background-position: 0px 0px
+}
