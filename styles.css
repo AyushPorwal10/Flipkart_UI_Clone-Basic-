@@ -644,9 +644,3 @@ hr{
     background-color: white;
     line-height: 10px;
 }
-.sprite{
-    height: 250px;
-    width: 250px;
-    background-image: url(boy.jpg);
-    background-position: 0px 0px
-}
